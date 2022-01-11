@@ -8,7 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class WelcomeController {
 
     @GetMapping(value = "/welcome")
-    private String welcome (){
+    private String welcome(){
         return "Hello!!!";
+    }
+
+    @GetMapping(value = "/about")
+    private Integer getAge(){
+        return 5;
     }
 }
